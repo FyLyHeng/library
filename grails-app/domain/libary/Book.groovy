@@ -6,6 +6,7 @@ class Book {
     String authors
     Long unitPrice
     String edition
+    String language
     Integer qty
     Date publicAt
     Boolean isAvailable=true

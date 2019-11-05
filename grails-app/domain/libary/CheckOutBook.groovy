@@ -10,10 +10,9 @@ class CheckOutBook {
     String bookStatus
     Long createdBy
     Date returnDate
-    //Date publicationDate  //publicationDate date book available
 
     static hasMany = [bookId:Book]
-    static belongsTo = [menber:Member,librarian:Librarian]
+    static belongsTo = [menber:Member,staff:Staff]
     static constraints = {
     }
 

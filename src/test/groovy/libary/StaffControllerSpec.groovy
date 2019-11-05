@@ -1,9 +1,9 @@
 package libary
 
-import grails.testing.gorm.DomainUnitTest
+import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class LibrarianSpec extends Specification implements DomainUnitTest<Librarian> {
+class StaffControllerSpec extends Specification implements ControllerUnitTest<LibrarianController> {
 
     def setup() {
     }

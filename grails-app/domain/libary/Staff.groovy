@@ -1,6 +1,6 @@
 package libary
 
-class Librarian {
+class Staff {
     String fullName
     String code
     Integer age
