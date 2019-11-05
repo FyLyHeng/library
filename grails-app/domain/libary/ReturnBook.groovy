@@ -1,6 +1,6 @@
 package libary
 
-class Return {
+class ReturnBook {
 
     String checkOutCode
     String bookBarcode

@@ -6,7 +6,7 @@ class Book {
     String authors
     String edition
     String language
-    Integer pageCount=1
+    Integer pageCount
     Long unitPrice
     Date publicAt
     Integer stockQty
@@ -20,7 +20,7 @@ class Book {
         authors nullable: true
         edition nullable: true
         language nullable: true
-        pageCount nullable: false
+        pageCount nullable: false,min: 1
         unitPrice nullable: true
         publicAt nullable: true
         stockQty nullable: false
