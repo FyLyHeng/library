@@ -1,19 +1,29 @@
 package libary
 
 class Book {
-    Subject code
+    String code
     String title
     String authors
-    Long unitPrice
     String edition
     String language
-    Integer qty
+    Integer pageCount=1
+    Long unitPrice
     Date publicAt
-    Boolean isAvailable=true
+    Integer stockQty
+    Boolean status
 
     static belongsTo = [subject:Subject]
 
 
     static constraints = {
+        title nullable: false
+        authors nullable: true
+        edition nullable: true
+        language nullable: true
+        pageCount nullable: false
+        unitPrice nullable: true
+        publicAt nullable: true
+        stockQty nullable: false
+        status nullable: false
     }
 }
