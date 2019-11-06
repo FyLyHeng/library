@@ -1,10 +1,10 @@
 package libary
 
-class SatffAccount {
+class StaffAccount {
     String userName
     String email
     String password
-    static hasOne = [staff:Staff]
+    //static hasOne = [staff:Staff]
 
     static constraints = {
         userName nullable: false

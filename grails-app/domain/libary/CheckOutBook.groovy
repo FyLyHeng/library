@@ -2,18 +2,22 @@ package libary
 
 class CheckOutBook {
     String checkOutCode
-    String bookBarcode
-    Date borrowed
-    Date due
-    Double depositAmount=0.0
-    String bookFormat
-    String bookStatus
+    Double depositAmount = 0.0
+    Long totalBooks
     Long createdBy
+    Date borrowDate
     Date returnDate
 
-    static hasMany = [bookId:Book]
-    static belongsTo = [menber:Member,staff:Staff]
+    //static hasMany = [bookId:Book]
+    //static belongsTo = [member:Member,staff:Staff]
     static constraints = {
+        checkOutCode nullable: false
+        depositAmount nullable: false
+        createdBy nullable: false
+        returnDate nullable: false
+        borrowDate nullable: false
+        totalBooks nullable: false
+
     }
 
 }

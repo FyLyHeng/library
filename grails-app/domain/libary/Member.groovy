@@ -9,7 +9,7 @@ class Member {
     Date dob
     String address
     String phone
-    static belongsTo = [account:MemberAccount]
+    //static belongsTo = [account:MemberAccount]
 
     static constraints = {
         code nullable: false

@@ -12,7 +12,7 @@ class Staff {
     String phone
     String position
 
-    static belongsTo = [staff:SatffAccount]
+    static belongsTo = [staff:StaffAccount]
 
     static constraints = {
         code nullable: false

@@ -1,11 +1,10 @@
 package libary
 
-class Category {
+//book,newspaper,...
+class BookFormat {
     String code
     String name
     String description
-
-    //static hasMany = [subjects:Subject]
 
     static constraints = {
         code nullable: false

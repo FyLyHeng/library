@@ -7,12 +7,13 @@ class Book {
     String edition
     String language
     Integer pageCount
+    String bookBarcode
     Long unitPrice
-    Date publicAt
+    Date publicDate
     Integer stockQty
-    Boolean status
 
-    static belongsTo = [subject:Subject]
+    //double requiredDeposit
+    //static belongsTo = [subject:Subject]
 
 
     static constraints = {
@@ -21,9 +22,9 @@ class Book {
         edition nullable: true
         language nullable: true
         pageCount nullable: false,min: 1
+        bookBarcode nullable: false
         unitPrice nullable: true
-        publicAt nullable: true
+        publicDate nullable: true
         stockQty nullable: false
-        status nullable: false
     }
 }

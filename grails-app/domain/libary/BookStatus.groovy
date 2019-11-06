@@ -1,14 +1,10 @@
 package libary
 
-class Category {
-    String code
+class BookStatus {
     String name
     String description
 
-    //static hasMany = [subjects:Subject]
-
     static constraints = {
-        code nullable: false
         name nullable: false
         description nullable: true
     }

@@ -2,24 +2,34 @@ package libary
 
 class ReturnBook {
 
-    String checkOutCode
-    String bookBarcode
+    String code
+    String checkOutCode = null
+    String reservationCode = null
     Double depositAmount = 0.0
-    Double penaltyAmount=0.0
+    Double penaltyAmount = 0.0
     Integer totalBooks
-    Date issusDate
-    Date borrowed
-    Date dueDate
-    Long overDay
+    Date reservationDate = null
+    Date borrowedDate = null
+    Date returnDate
+    Long overDay = 0
     Long createdBy
     String status
 
-    static hasMany = [bookId:Book]
-    static belongsTo = [menber:Member,staff:Staff]
+    //static hasMany = [bookId:Book]
+    //static belongsTo = [member:Member,staff:Staff]
 
     static constraints = {
-    }
-    def beforeInsert(){
-        dueDate = new Date()
+        checkOutCode nullable: false
+        reservationCode nullable: false
+        depositAmount nullable: true
+        penaltyAmount nullable: true
+        totalBooks nullable: true
+        reservationDate nullable: true
+        borrowedDate nullable: true
+        returnDate nullable: true
+        overDay nullable: true
+        createdBy nullable: false
+        status nullable: true
+
     }
 }
