@@ -3,7 +3,7 @@ package libary
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class AccountSpec extends Specification implements DomainUnitTest<Account> {
+class MemberAccountSpec extends Specification implements DomainUnitTest<MemberAccount> {
 
     def setup() {
     }

@@ -3,7 +3,7 @@ package libary
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class ImportSpec extends Specification implements DomainUnitTest<Import> {
+class BookFormatSpec extends Specification implements DomainUnitTest<BookFormat> {
 
     def setup() {
     }

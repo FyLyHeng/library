@@ -3,7 +3,7 @@ package libary
 import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class StaffControllerSpec extends Specification implements ControllerUnitTest<LibrarianController> {
+class StaffControllerSpec extends Specification implements ControllerUnitTest<StaffController> {
 
     def setup() {
     }

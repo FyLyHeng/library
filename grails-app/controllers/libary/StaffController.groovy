@@ -1,6 +1,6 @@
 package libary
 
-class LibrarianController {
+class StaffController {
 
     def index() { }
 }

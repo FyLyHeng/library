@@ -3,7 +3,7 @@ package libary
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class ReturnBookSpec extends Specification implements DomainUnitTest<ReturnBook> {
+class BookStatusSpec extends Specification implements DomainUnitTest<BookStatus> {
 
     def setup() {
     }
